@@ -7,7 +7,7 @@ If you don't change anything, this application will read from the dictionary fir
 
 To execute the project open the main folder in your CMD and write:
 
-```BluePrismExercise.exe ARG1 ARG2```
+```BluePrismExercise.exe StartWord EndWord```
 example:
 ```BluePrismExercise.exe SPIN SPOT```
 
