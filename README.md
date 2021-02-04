@@ -24,3 +24,7 @@ Separate the SERVICE in a different .csproj making it more scalable.
 
 Use a bit less redundancy to be easier to read.
 
+
+Obs:
+
+I just published everything in the main folder to be easier for who will test this application, please don't consider it in your avaliation.
