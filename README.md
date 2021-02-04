@@ -1,9 +1,9 @@
 # BluePrismExercise
 
-This project has a appsettings.json where you can add your configurations, they are:
+This project has a appsettings.json where you can edit the *file directories*, they are:
 ```DictionaryPath and ResultPath```
 
-If you don't set any, this application will read from the dictionary first provided with name "word-dictionary.txt" and the result path will be inside the ```bin/``` folder in the file ```result.txt```
+If you don't change anything, this application will read from the dictionary first provided with name "word-english.txt" and the result path will be inside the ```bin/``` folder in the file ```result.txt```
 
 To execute the project open the main folder in your CMD and write:
 
