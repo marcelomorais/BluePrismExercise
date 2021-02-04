@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BluePrismExercise": {
+      "commandName": "Project",
+      "commandLineArgs": "SPIN SPOT"
+    }
+  }
+}
