@@ -15,8 +15,12 @@ example:
 Improvement areas:
 
 Create Integration tests
+
 Decrease the amount of private methods in order to be more testable
+
 Create more unit tests to cover edge cases
+
 Separate the SERVICE in a different .csproj making it more scalable.
+
 Use a bit less redundancy to be easier to read.
 
