@@ -1,5 +1,6 @@
 ﻿using BluePrismExercise.Interfaces;
 using BluePrismExercise.Models;
+using Microsoft.Extensions.Options;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,12 +15,14 @@ namespace BluePrismExercise.Services
 
         private IFileService _fileProcessor;
         private ITextWriter _writer;
+        private IOptions<Configurations> _config;
         private List<string> words;
 
-        public WordService(IFileService fileProcessor, ITextWriter textWriter)
+        public WordService(IFileService fileProcessor, ITextWriter textWriter, IOptions<Configurations> config)
         {
             _fileProcessor = fileProcessor;
             _writer = textWriter;
+            _config = config
         }
 
         public async Task<Word> Run(string startWord, string endWord)
@@ -33,9 +36,9 @@ namespace BluePrismExercise.Services
                 _writer.WriteLine("The words could not be found in the dictionary");
                 return null;
             }
-            if (!CheckWordsAreOfLength(startWord, endWord, 4))
+            if (!CheckWordsAreOfLength(startWord, endWord, _config.Value.WordSize))
             {
-                _writer.WriteLine("The words are not of length 4");
+                _writer.WriteLine($"The words are not of length {_config.Value.WordSize}");
                 return null;
             }
 

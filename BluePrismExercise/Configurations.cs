@@ -4,5 +4,6 @@
     {
         public string DictionaryPath { get; set; }
         public string ResultPath { get; set; }
+        public int WordSize { get; set; }
     }
 }
