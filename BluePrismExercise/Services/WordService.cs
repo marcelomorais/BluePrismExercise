@@ -22,7 +22,7 @@ namespace BluePrismExercise.Services
         {
             _fileProcessor = fileProcessor;
             _writer = textWriter;
-            _config = config
+            _config = config;
         }
 
         public async Task<Word> Run(string startWord, string endWord)
